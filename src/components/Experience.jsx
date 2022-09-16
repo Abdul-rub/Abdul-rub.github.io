@@ -89,7 +89,7 @@ const Experience = () => {
   ];
 
   return (
-    <div
+    <div style={{height:"auto",border:"1px solid red"}}
       name="experience"
       className="bg-gradient-to-b from-gray-800 to-black w-full h-screen experience"
     >

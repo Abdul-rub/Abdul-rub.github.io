@@ -6,6 +6,7 @@ import NavBar from "./components/NavBar";
 import Portfolio from "./components/Portfolio";
 import SocialLinks from "./components/SocialLinks";
 import Footer from "./components/Footer"
+import Statistics from "./components/Statistics";
 
 function App() {
   return (
@@ -15,9 +16,10 @@ function App() {
       <About />
       <Portfolio />
       <Experience />
+      <Statistics/>
       <Contact />
       <Footer />
-      <SocialLinks />
+      {/* <SocialLinks /> */}
     </div>
   );
 }

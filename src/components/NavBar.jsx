@@ -24,12 +24,18 @@ const NavBar = () => {
     },
     {
       id: 5,
+      link: "statistics",
+    },
+    {
+      id: 6,
       link: "contact",
     },
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed nav">
+    <div
+    style={{border:"1px solid teal"}}
+     className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed nav">
       <div>
        
         <h1 className="text-5xl font-signature ml-2"><a className="link-underline link-underline-black" target="_blank" rel="noreferrer">Abdul Rub</a></h1>

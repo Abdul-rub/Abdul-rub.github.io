@@ -9,6 +9,7 @@ const Portfolio = () => {
       id: 1,
       src: Men,
       title: "Mytheresa Clone",
+      desc: "Mytheresa is an online shopping destination for children's, men's, and women's luxury fashion and lifestyle design",
       link: "https://illustrious-pasca-32510e.netlify.app/",
       repo: "https://github.com/br-lovanshi/mytheresa.com",
     },
@@ -16,6 +17,7 @@ const Portfolio = () => {
       id: 2,
       src: ketto,
       title: "Ketto Clone",
+      desc: "Mytheresa is an online shopping destination for children's, men's, and women's luxury fashion and lifestyle design",
       link: "https://effulgent-horse-6e1937.netlify.app/",
       repo: "https://github.com/NarendraKumarSwami/grateful-zebra-4531",
     },
@@ -23,13 +25,14 @@ const Portfolio = () => {
       id: 3,
       src: CRUDop,
       title: "CRUD with React",
+      desc: "Mytheresa is an online shopping destination for children's, men's, and women's luxury fashion and lifestyle design",
       link: "https://myform1.netlify.app/",
       repo: "https://github.com/Abdul-rub/CRUD-Operation-",
     },
   ];
 
   return (
-    <div
+    <div style={{height:"auto",border:"1px solid red"}}
       name="projects"
       className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen portfolio"
     >
@@ -42,14 +45,15 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {projects.map(({ id, src, link, repo,title }) => (
+          {projects.map(({ id, src, link, repo,title,desc }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
                 alt="projects"
                 className="rounded-md duration-200 hover:scale-105"
               />
-              <div>{title}</div>
+              <div className="text-2xl">{title}</div>
+              <div className="mt-2">{desc}</div>
               <div className="flex items-center justify-center">
                 <button
                   className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
