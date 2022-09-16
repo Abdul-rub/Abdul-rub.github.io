@@ -3,7 +3,6 @@ const Statistics = () => {
 
   return (
     <div 
-      style={{ height: "auto" ,border:"1px solid red"}}
       name="statistics"
       className="bg-gradient-to-b from-gray-800 to-black w-full h-screen experience mbottom ptop"
     >

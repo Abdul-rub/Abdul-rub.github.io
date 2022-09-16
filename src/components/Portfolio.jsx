@@ -9,6 +9,7 @@ const Portfolio = () => {
       id: 1,
       src: Men,
       title: "Mytheresa Clone",
+      techStack:"HTML|CSS |JS",
       desc: "Mytheresa is an online shopping destination for children's, men's, and women's luxury fashion and lifestyle design",
       link: "https://illustrious-pasca-32510e.netlify.app/",
       repo: "https://github.com/br-lovanshi/mytheresa.com",
@@ -17,6 +18,7 @@ const Portfolio = () => {
       id: 2,
       src: ketto,
       title: "Ketto Clone",
+      techStack:"HTML|CSS |JS" ,
       desc: "Mytheresa is an online shopping destination for children's, men's, and women's luxury fashion and lifestyle design",
       link: "https://effulgent-horse-6e1937.netlify.app/",
       repo: "https://github.com/NarendraKumarSwami/grateful-zebra-4531",
@@ -25,6 +27,7 @@ const Portfolio = () => {
       id: 3,
       src: CRUDop,
       title: "CRUD with React",
+      techStack:"HTML|CSS |REACT",
       desc: "Mytheresa is an online shopping destination for children's, men's, and women's luxury fashion and lifestyle design",
       link: "https://myform1.netlify.app/",
       repo: "https://github.com/Abdul-rub/CRUD-Operation-",
@@ -32,9 +35,9 @@ const Portfolio = () => {
   ];
 
   return (
-    <div style={{height:"auto",border:"1px solid red"}}
+    <div
       name="projects"
-      className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen portfolio"
+      className="w-full h-100 bg-gradient-to-b from-gray-800 to-black text-white about"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
@@ -44,27 +47,28 @@ const Portfolio = () => {
           <p className="py-6">Check out some of my work right here</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {projects.map(({ id, src, link, repo,title,desc }) => (
+        <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-8 px-12 sm:px-0">
+          {projects.map(({ id, src, link, repo,title,desc,techStack }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
                 alt="projects"
-                className="rounded-md duration-200 hover:scale-105"
+                className="rounded-md duration-200 hover:scale-105 h-60 w-full"
               />
-              <div className="text-2xl">{title}</div>
+              <div className="text-2xl text-center">{title}</div>
               <div className="mt-2">{desc}</div>
+              <p className="text-center pt-4 text-slate-300	font-medium	text-xl	">Tech Stack: {techStack}</p>
+
+                
               <div className="flex items-center justify-center">
                 <button
-                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
-                  onClick={() => window.open(link, "_blank")}
-                >
+                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded "
+                  onClick={() => window.open(link, "_blank")}>
                   Demo
                 </button>
                 <button
-                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
-                  onClick={() => window.open(repo, "_blank")}
-                >
+                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                  onClick={() => window.open(repo, "_blank")}>
                   GitHub
                 </button>
               </div>

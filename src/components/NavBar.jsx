@@ -34,7 +34,7 @@ const NavBar = () => {
 
   return (
     <div
-    style={{border:"1px solid teal"}}
+    
      className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed nav">
       <div>
        

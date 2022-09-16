@@ -7,11 +7,11 @@ import resume from "../assets/resume.pdf"
 
 const Home = () => {
   return (
-    <div  style={{height:"auto",border:"1px solid red", marginTop:"auto" }}
+    <div  
       name="home"
       className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 home"
     >
-      <div style={{height:"100",border:"1px solid blue",marginTop:"70px" }} className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
+      <div style={{height:"100"}} className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
       <div className="small-screen hidden mt-10 mx-10">
           <img
             src={abdulimage}
@@ -28,8 +28,6 @@ const Home = () => {
             I love to work on web application using technologies like
             React, and Redux.
           </p>
-
-          <div className="portfolio-btn">
           <a href={resume} download>
             <div className="portfolio-btn">
 
@@ -37,8 +35,7 @@ const Home = () => {
                 to="/"
                 smooth
                 duration={500}
-                className="group text-white  w-fit px-6 py-3 my-2 flex items-center rounded-md m-auto  bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
-              >
+                className="group text-white  w-fit px-6 py-3 my-2 flex items-center rounded-md m-auto  bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
                 Resume
                 <span className="group-hover:rotate-90 duration-300">
                   <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
@@ -47,13 +44,13 @@ const Home = () => {
 
             </div>
           </a>
-          </div>
+       
         </div>
         <div className="big-screen">
-          <img style={{border:"1px solid green"}}
+          <img 
             src={abdulimage}
             alt="profile"
-            className="p-20 w-100 h-90 rounded-full "
+            className="p-10 w-100 h-90 rounded-full"
           />
         </div>
         
