@@ -37,8 +37,7 @@ const Portfolio = () => {
   return (
     <div
       name="projects"
-      className="w-full h-100 bg-gradient-to-b from-gray-800 to-black text-white about"
-    >
+      className="w-full h-100  bg-sky-900 text-white about">
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
@@ -49,25 +48,25 @@ const Portfolio = () => {
 
         <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-8 px-12 sm:px-0">
           {projects.map(({ id, src, link, repo,title,desc,techStack }) => (
-            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
+            <div key={id} className="shadow-md shadow-gray-600 bg-black rounded-lg">
               <img
                 src={src}
                 alt="projects"
                 className="rounded-md duration-200 hover:scale-105 h-60 w-full"
               />
               <div className="text-2xl text-center">{title}</div>
-              <div className="mt-2">{desc}</div>
+              <div className="mt-2 p-4 text-lg">{desc}</div>
               <p className="text-center pt-4 text-slate-300	font-medium	text-xl	">Tech Stack: {techStack}</p>
 
                 
               <div className="flex items-center justify-center">
                 <button
-                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded "
+                  className="w-24 px-6 pl-4  py-3 m-4 duration-200 hover:scale-105 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded "
                   onClick={() => window.open(link, "_blank")}>
                   Demo
                 </button>
                 <button
-                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                  className="w-24 px-6 py-3 m-4 duration-200 hover:scale-105 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
                   onClick={() => window.open(repo, "_blank")}>
                   GitHub
                 </button>

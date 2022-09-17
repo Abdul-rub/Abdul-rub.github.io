@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div  
       name="home"
-      className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 home"
+      className="h-screen w-full  bg-sky-900 home"
     >
       <div style={{height:"100"}} className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
       <div className="small-screen hidden mt-10 mx-10">
@@ -21,9 +21,9 @@ const Home = () => {
         </div>
         <div className="flex flex-col justify-center h-full">
           <h2 className="text-4xl sm:text-7xl font-bold text-white">
-            I'm a Full Stack Web Developer
+            I'm  <span className="text-black" >Abdul Rub</span> <p className="">Full Stack Web Developer</p>
           </h2>
-          <p className="text-gray-500 py-4 max-w-md">
+          <p className="text-black	 font-bold text-xl  py-4 max-w-md">
             I love to build websites and desgining software.
             I love to work on web application using technologies like
             React, and Redux.
@@ -35,7 +35,7 @@ const Home = () => {
                 to="/"
                 smooth
                 duration={500}
-                className="group text-white  w-fit px-6 py-3 my-2 flex items-center rounded-md m-auto  bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
+                className="group text-white  w-fit px-6 py-3 my-2 flex items-center rounded-md m-auto  bg-black cursor-pointer">
                 Resume
                 <span className="group-hover:rotate-90 duration-300">
                   <MdOutlineKeyboardArrowRight size={25} className="ml-1" />

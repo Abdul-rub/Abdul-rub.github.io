@@ -76,7 +76,7 @@ const Experience = () => {
     <div
       // style={{ marginTop: "10px" }}
       name="experience"
-      className=" w-full h-100 bg-gradient-to-b from-gray-800 to-black text-white ptop"
+      className=" w-full h-100  bg-black text-white ptop"
     >
       <div className=" max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
         <div>
