@@ -9,7 +9,7 @@ function handleSubmit(e){
 
 const Contact = () => {
   return (
-    <div 
+    <div style={{marginTop:"15px"}}
       name="contact"
       className="contact w-full h-100  bg-black text-white p-4 text-white"
     >
