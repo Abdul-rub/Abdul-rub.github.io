@@ -14,7 +14,10 @@ const About = () => {
         </div>
 
         <p className="text-xl mt-5">
-        Proficient in  CODING Passionate about implementing and launching new projects. Ability to translate business requirements into technical solutions. Looking to start my career as an entry-level software engineer with a reputed firm driven by technology.</p>
+        Proficient in  CODING Passionate about implementing and launching new projects.
+         Ability to translate business requirements into technical solutions.
+          Looking to start my career as an entry-level software engineer with a reputed
+           firm driven by technology.</p>
         <br />
         <p className="text-xl">
         {/* Proficient in  CODING Passionate about implementing and launching new projects. Ability to translate business requirements into technical solutions. Looking to start my career as an entry-level software engineer with a reputed firm driven by technology. */}
