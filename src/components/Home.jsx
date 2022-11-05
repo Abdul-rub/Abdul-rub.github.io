@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div  
       name="home"
-      className="h-screen w-full  bg-sky-900 home"
+      className="h-screen w-full bg-gradient-to-r from-sky-400 to-indigo-900"
     >
       <div style={{height:"100"}} className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
       <div className="small-screen hidden mt-10 mx-10">
@@ -25,12 +25,10 @@ const Home = () => {
           </h2>
           <p className="text-black	 font-bold text-xl  py-4 max-w-md">
             I love to build websites and desgining software.
-            I love to work on web application using technologies like
-            React, and Redux.
+            I love to work on web application using MERN stack
           </p>
           <a href={resume} download>
             <div className="portfolio-btn">
-
               <div
                 to="/"
                 smooth
@@ -44,8 +42,8 @@ const Home = () => {
 
             </div>
           </a>
-       
         </div>
+        
         <div className="big-screen">
           <img 
             src={abdulimage}

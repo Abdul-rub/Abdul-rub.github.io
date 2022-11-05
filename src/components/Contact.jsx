@@ -11,7 +11,8 @@ const Contact = () => {
   return (
     <div style={{marginTop:"15px"}}
       name="contact"
-      className="contact w-full h-100  bg-black text-white p-4 text-white"
+      className="contact w-full h-100  bg-black --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity)) p-4 text-white"
     >
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
         <div className="pb-8">

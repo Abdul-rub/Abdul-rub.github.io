@@ -66,6 +66,24 @@ const Experience = () => {
     },
     {
       id: 14,
+      src: mongodb,
+      title: "MongoDB",
+      style: "shadow-green-500",
+    },
+    {
+      id: 14,
+      src: node,
+      title: "Node js",
+      style: "shadow-green-500",
+    },
+    {
+      id: 14,
+      src: express,
+      title: "Express",
+      style: "shadow-gray-400",
+    },
+    {
+      id: 14,
       src: softS,
       title: "Soft skills",
       style: "shadow-blue-500",
