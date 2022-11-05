@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.be85c504.css",
-    "main.js": "/static/js/main.68b5ae61.js",
+    "main.css": "/static/css/main.daaec24a.css",
+    "main.js": "/static/js/main.60a2e494.js",
     "static/media/ketto.png": "/static/media/ketto.551ffa4fb587be44ec7b.png",
     "static/media/Men.png": "/static/media/Men.f99ddbcbd600e36442b7.png",
-    "static/media/resume.pdf": "/static/media/resume.580ee101c7437211f68e.pdf",
+    "static/media/resume.pdf": "/static/media/resume.ace1f59aea0102cc5183.pdf",
     "static/media/abdulimage.jpg": "/static/media/abdulimage.d5d6be3bb4100c1e7164.jpg",
     "static/media/graphql.png": "/static/media/graphql.fc6b9451733c620ceb86.png",
     "static/media/CRUDop.png": "/static/media/CRUDop.51e6563e64c1773e3a12.png",
+    "static/media/indeed.png": "/static/media/indeed.4fa3b3106f0cd258723d.png",
     "static/media/react.png": "/static/media/react.0cf951a69d8e58f83f9d.png",
     "static/media/node.png": "/static/media/node.952a9ea986dcfa5229ad.png",
     "static/media/nextjs.png": "/static/media/nextjs.48ddc8121a0fcb543d64.png",
@@ -18,11 +19,11 @@
     "static/media/express.png": "/static/media/express.1182731d0fa4994589eb.png",
     "static/media/javascript.png": "/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/index.html",
-    "main.be85c504.css.map": "/static/css/main.be85c504.css.map",
-    "main.68b5ae61.js.map": "/static/js/main.68b5ae61.js.map"
+    "main.daaec24a.css.map": "/static/css/main.daaec24a.css.map",
+    "main.60a2e494.js.map": "/static/js/main.60a2e494.js.map"
   },
   "entrypoints": [
-    "static/css/main.be85c504.css",
-    "static/js/main.68b5ae61.js"
+    "static/css/main.daaec24a.css",
+    "static/js/main.60a2e494.js"
   ]
 }
