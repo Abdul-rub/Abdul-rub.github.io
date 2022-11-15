@@ -21,7 +21,7 @@ const Statistics = () => {
     <div
       style={{ height: "auto" }}
       name="statistics"
-      className="  w-full h-screen bg-gradient-to-r from-sky-400 to-indigo-900">
+      className="py-10  w-full h-screen bg-gradient-to-r from-sky-400 to-indigo-900">
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
         <div>
           <p style={{textShadow: "0 0 5px #040404, 0 0 15px #4a53cf, 0 0 20px #040404, 0 0 40px #040404, 0 0 60px #3bb6c4, 0 0 10px #4a53cf, 0 0 98px #040404"}}

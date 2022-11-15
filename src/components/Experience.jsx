@@ -1,11 +1,8 @@
 import React from "react";
-
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
-import nextjs from "../assets/nextjs.png";
-import graphql from "../assets/graphql.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
 import node from "../assets/node.png";
@@ -14,7 +11,7 @@ import mongodb from "../assets/mongodb.png";
 import redux from "../assets/redux.png";
 import dataS from "../assets/dataS.png";
 import softS from "../assets/softS.png";
-const Experience = () => {
+const Skills = () => {
   const techs = [
     {
       id: 1,
@@ -92,14 +89,13 @@ const Experience = () => {
 
   return (
     <div
-      // style={{ marginTop: "10px" }}
-      name="experience"
-      className=" w-full h-100  bg-black text-white ptop"
+      name="skills"
+      className=" w-full h-100  bg-black text-white ptop py-10"
     >
       <div className=" max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
         <div>
           <p className=" text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
-            Experience
+            Skills
           </p>
           <p className="py-6">
             These are the technologies I've worked with and used them in my
@@ -123,4 +119,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Skills;

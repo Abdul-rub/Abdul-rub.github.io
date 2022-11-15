@@ -27,21 +27,22 @@ const Home = () => {
             I love to build websites and desgining software.
             I love to work on web application using MERN stack
           </p>
-          <a href={resume} download>
-            <div className="portfolio-btn">
+          
+            <div className="portfolio-btn"  >
               <div
                 to="/"
                 smooth
                 duration={500}
-                className="group text-white  w-fit px-6 py-3 my-2 flex items-center rounded-md m-auto  bg-black cursor-pointer">
+                className="group text-white  w-fit  my-2 flex items-center rounded-md   bg-black cursor-pointer">
+            <a href={resume} download className="py-3  px-6 flex" style={{height:"100%",width:"100"}} >
                 Resume
                 <span className="group-hover:rotate-90 duration-300">
                   <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
                 </span>
+              </a>
               </div>
-
             </div>
-          </a>
+          
         </div>
         
         <div className="big-screen">

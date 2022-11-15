@@ -21,7 +21,7 @@ const NavBar = () => {
     },
     {
       id: 4,
-      link: "experience",
+      link: "skills",
     },
     {
       id: 5,
@@ -55,12 +55,10 @@ const NavBar = () => {
           </li>
         ))}
          <li 
-          className="nav-links px-4 cursor-pointer capitalize font-bold text-xl text-black-500 hover:scale-105 hover:text-black duration-200 link-underline"
+          className="nav-links px-4 cursor-pointer capitalize font-weight:500  text-black-500 hover:scale-105 hover:text-sky-900 duration-200 link-underline"
           ><a 
           href={resume}
           download={true}
-          // target="_blank"
-          // rel="noreferrer"
           >
             Resume</a></li>
       </ul>

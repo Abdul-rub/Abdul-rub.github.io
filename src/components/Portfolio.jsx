@@ -47,7 +47,7 @@ const Portfolio = () => {
   return (
     <div
       name="projects"
-      className="w-full h-100 bg-gradient-to-l from-sky-400 to-indigo-900">
+      className="w-full h-100 bg-gradient-to-l from-sky-400 to-indigo-900 py-10">
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
@@ -75,12 +75,13 @@ const Portfolio = () => {
                   className="w-24 padding-left: 1.5rem padding-right: 1.5rem/ pl-4  padding-top: 0.75rem
                   padding-bottom: 0.75rem m-4 duration-200 hover:scale-105 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded "
                   onClick={() => window.open(link, "_blank")}>
-                  Demo
+                  Live
                 </button>
                 <button
-                  className="w-24 px-6 py-3 m-4 duration-200 hover:scale-105 bg-blue-500 hover:bg-blue-700 text-white font-bold padding-top: 0.5rem padding-bottom: 0.5rem padding-left: 1rem padding-right: 1rem rounded"
+                  className="w-24 padding-left: 1.5rem padding-right: 1.5rem/ pl-4  padding-top: 0.75rem
+                  padding-bottom: 0.75rem m-4 duration-200 hover:scale-105 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
                   onClick={() => window.open(repo, "_blank")}>
-                  GitHub
+                  Github
                 </button>
               </div>
             </div>
