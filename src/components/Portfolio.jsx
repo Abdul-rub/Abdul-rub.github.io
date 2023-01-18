@@ -3,11 +3,21 @@ import Men from "../assets/portfolio/Men.png"
 import CRUDop from "../assets/portfolio/CRUDop.png"
 import ketto from "../assets/portfolio/ketto.png"
 import indeed from "../assets/portfolio/indeed.png"
+import BlogApp from "../assets/portfolio/BlogApp.png"
 
 const Portfolio = () => {
   const projects = [
     {
       id: 1,
+      src: BlogApp,
+      title: "Multi-User-BlogApp",
+      techStack:"REACT| REDUX| NODEJS | MONGODB | EXPRESSJS | CHAKRA UI",
+      desc: "It's a Multi-user (MERN) Blog app where anyone can create an account and have their specific blog.",
+      link: "https://abdul-multi-user-blog-app.netlify.app/",
+      repo: "https://github.com/Abdul-rub/Multi-User-Blog-App",
+    },
+    {
+      id: 2,
       src: indeed,
       title: "Indeed Clone",
       techStack:"REACT| REDUX| FIREBASE| CHAKRA UI",
@@ -16,7 +26,7 @@ const Portfolio = () => {
       repo: "https://github.com/RavinderTakda/nifty-deer-6877",
     },
     {
-      id: 2,
+      id: 3,
       src: Men,
       title: "Mytheresa Clone",
       techStack:"HTML|CSS |JS",
@@ -25,7 +35,7 @@ const Portfolio = () => {
       repo: "https://github.com/br-lovanshi/mytheresa.com",
     },
     {
-      id: 3,
+      id: 4,
       src: ketto,
       title: "Ketto Clone",
       techStack:"HTML|CSS |JS" ,
@@ -34,7 +44,7 @@ const Portfolio = () => {
       repo: "https://github.com/NarendraKumarSwami/grateful-zebra-4531",
     },
     {
-      id: 4,
+      id: 5,
       src: CRUDop,
       title: "CRUD with React",
       techStack:"HTML|CSS |REACT",

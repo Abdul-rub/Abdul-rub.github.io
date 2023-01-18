@@ -57,8 +57,9 @@ const NavBar = () => {
          <li 
           className="nav-links px-4 cursor-pointer capitalize font-weight:500  text-black-500 hover:scale-105 hover:text-sky-900 duration-200 link-underline"
           ><a 
-          href={resume}
-          download={true}
+          href={"https://drive.google.com/file/d/1VDY-OuEy3IWyJvm8usVDKn0lV0wTcYX5/view?usp=sharing" }
+          target="_blank"
+          // download={true}
           >
             Resume</a></li>
       </ul>

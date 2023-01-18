@@ -1,22 +1,6 @@
 import React from "react";
 import GitHubCalendar from "react-github-calendar";
 const Statistics = () => {
-  const selectLastHalfYear = (contributions) => {
-    const currentYear = new Date().getFullYear();
-    const currentMonth = new Date().getMonth();
-    const shownMonths = 6;
-
-    return contributions.filter((day) => {
-      const date = new Date(day.date);
-      const monthOfDay = date.getMonth();
-
-      return (
-        date.getFullYear() === currentYear &&
-        monthOfDay > currentMonth - shownMonths &&
-        monthOfDay <= currentMonth
-      );
-    });
-  };
   return (
     <div
       style={{ height: "auto" }}
@@ -41,7 +25,7 @@ const Statistics = () => {
       <div className="flex justify-center items-center  mt-16 text-6xl font-medium">
         <GitHubCalendar 
      username="Abdul-Rub" 
-  transformData={selectLastHalfYear} />
+ />
       </div>
       {/* <div style={{marginTop:"60px"}}>
           <img  alt="Abdul Rub's Activity Graph" src="https://activity-graph.herokuapp.com/graph?username=Abdul-Rub&theme=prussian&color=FFA500&line=FFA500&point=FFA500&hide_border=true" />
