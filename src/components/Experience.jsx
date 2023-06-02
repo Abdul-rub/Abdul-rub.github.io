@@ -1,122 +1,37 @@
-import React from "react";
-import html from "../assets/html.png";
-import css from "../assets/css.png";
-import javascript from "../assets/javascript.png";
-import reactImage from "../assets/react.png";
-import github from "../assets/github.png";
-import tailwind from "../assets/tailwind.png";
-import node from "../assets/node.png";
-import express from "../assets/express.png";
-import mongodb from "../assets/mongodb.png";
-import redux from "../assets/redux.png";
-import dataS from "../assets/dataS.png";
-import softS from "../assets/softS.png";
-const Skills = () => {
-  const techs = [
-    {
-      id: 1,
-      src: html,
-      title: "HTML",
-      style: "shadow-orange-500",
-    },
-    {
-      id: 2,
-      src: css,
-      title: "CSS",
-      style: "shadow-blue-500",
-    },
-    {
-      id: 3,
-      src: javascript,
-      title: "JavaScript",
-      style: "shadow-yellow-500",
-    },
-    {
-      id: 4,
-      src: reactImage,
-      title: "React",
-      style: "shadow-blue-600",
-    },
-    {
-      id: 5,
-      src: github,
-      title: "GitHub",
-      style: "shadow-gray-400",
-    },
-    {
-      id: 6,
-      src: tailwind,
-      title: "Tailwind",
-      style: "shadow-sky-400",
-    },
-    {
-      id: 12,
-      src: redux,
-      title: "Redux",
-      style: "shadow-purple-500",
-    },
-    {
-      id: 13,
-      src: dataS,
-      title: "Data Structure",
-      style: "shadow-red-500",
-    },
-    {
-      id: 14,
-      src: mongodb,
-      title: "MongoDB",
-      style: "shadow-green-500",
-    },
-    {
-      id: 14,
-      src: node,
-      title: "Node js",
-      style: "shadow-green-500",
-    },
-    {
-      id: 14,
-      src: express,
-      title: "Express",
-      style: "shadow-gray-400",
-    },
-    {
-      id: 14,
-      src: softS,
-      title: "Soft skills",
-      style: "shadow-blue-500",
-    },
-  ];
+import React from 'react';
+import cleverpushlogo from "../assets/cleverpushlogo.jpeg";
+import "./style/Experience.css"
 
+const Experience = () => {
   return (
-    <div
-      name="skills"
-      className=" w-full h-100  bg-black text-white ptop py-10"
-    >
-      <div className=" max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
-        <div>
-          <p className=" text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
-            Skills
-          </p>
-          <p className="py-6">
-            These are the technologies I've worked with and used them in my
-            projects.
+    <div  name="experience" className="w-full bg-black text-white py-10">
+      <div className="max-w-screen-lg p-4 mx-auto card-wrapper">
+        <div className="pb-8">
+          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+            <span style={{ borderBottom: '2px solid white' }}>Experience</span>
           </p>
         </div>
 
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
-          {techs.map(({ id, src, title, style }) => (
-            <div
-              key={id}
-              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
-            >
-              <img src={src} alt="" className="w-20 mx-auto" />
-              <p className="mt-4">{title}</p>
-            </div>
-          ))}
+        <div className='flex items-center'>
+          <img src={cleverpushlogo} alt="CleverPush Logo" className="w-10 h-10 mr-5" />
+          <h1 className="text-4xl font-bold">
+            CleverPush
+          </h1>
+        </div>
+        <p className='text-xl'>(Full Stack Developer)</p>
+
+        <div className="mt-5">
+          <p className='text-xl'>Key Responsibilities:</p>
+          <ul className="list-disc ml-8 text-lg leading-loose">
+            <li>Developing and implementing features based on client requirements and specifications.</li>
+            <li>Assisting in bug fixing and issue resolution reported by clients.</li>
+            <li>Collaborating with the development team to contribute to the full stack development process.</li>
+            <li>Participating in code reviews, testing, and documentation to ensure code quality and project integrity.</li>
+          </ul>
         </div>
       </div>
     </div>
   );
 };
 
-export default Skills;
+export default Experience;

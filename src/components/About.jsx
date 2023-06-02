@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div 
+    <div
       name="about"
       className="w-full h-100 bg-black-bg-sky-900 text-white about py-10"
     >
@@ -14,14 +14,14 @@ const About = () => {
         </div>
 
         <p className="text-xl mt-5">
-        Proficient in  CODING Passionate about implementing and launching new projects.
-         Ability to translate business requirements into technical solutions.
-          Looking to start career as an entry-level software engineer with a good
-           firm driven by technology.</p>
+          Highly skilled in coding with a strong focus on implementing
+          and launching innovative projects. Demonstrated ability to
+          transform business requirements into effective technical
+          solutions. Seeking an entry-level software engineering position
+          with a renowned technology-driven firm. Committed to
+          contributing to the organization's success through my technical
+          expertise and passion for cutting-edge technology.</p>
         <br />
-        <p className="text-xl">
-        {/* Proficient in  CODING Passionate about implementing and launching new projects. Ability to translate business requirements into technical solutions. Looking to start my career as an entry-level software engineer with a reputed firm driven by technology. */}
-        </p>
       </div>
     </div>
   );

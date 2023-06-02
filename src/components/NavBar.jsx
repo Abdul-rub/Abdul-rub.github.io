@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-scroll";
-import resume from "../assets/resume.pdf"
+import { Link, Events, animateScroll as scroll, scrollSpy } from "react-scroll";
+import resume from "../assets/resume.pdf";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
+  const [activeSection, setActiveSection] = useState(null);
 
   const links = [
     {
@@ -17,51 +18,74 @@ const NavBar = () => {
     },
     {
       id: 3,
-      link: "projects",
+      link: "experience",
     },
     {
       id: 4,
-      link: "skills",
+      link: "projects",
     },
     {
       id: 5,
-      link: "statistics",
+      link: "skills",
     },
     {
       id: 6,
+      link: "statistics",
+    },
+    {
+      id: 7,
       link: "contact",
     },
-    
+
   ];
 
+  useEffect(() => {
+    Events.scrollEvent.register("begin", () => { });
+    Events.scrollEvent.register("end", () => { });
+    scrollSpy.update();
+
+    return () => {
+      Events.scrollEvent.remove("begin");
+      Events.scrollEvent.remove("end");
+    };
+  }, []);
+
+  const handleSetActive = (to) => {
+    setActiveSection(to);
+  };
+
   return (
-    <div
-    
-     className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed nav">
+    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed nav">
       <div>
-       
-        <h1 className="text-5xl font-signature ml-2"><a className="link-underline link-underline-black text-sky" target="_blank" rel="noreferrer">Abdul Rub</a></h1>
+        <h1 className="text-5xl font-signature ml-2">
+          <a className="link-underline link-underline-black text-sky" target="_blank" rel="noreferrer">
+            Abdul Rub
+          </a>
+        </h1>
       </div>
 
       <ul className="hidden md:flex">
-        {links.map(({ id, link }) => (                
+        {links.map(({ id, link }) => (
           <li
             key={id}
-            className="nav-links px-4 cursor-pointer capitalize font-weight: 500 text-white hover:scale-105 hover:text-sky-900 font-medium duration-200 link-underline"
+            className={`nav-links px-4 cursor-pointer capitalize ${activeSection === link ? "text-sky-900" : "text-white"
+              } hover:scale-105 hover:text-sky-900 font-medium duration-200 link-underline`}
           >
-            <Link  offset={-100} to={link} smooth duration={500}>
+            <Link offset={-100} to={link} smooth duration={500} spy={true} onSetActive={handleSetActive}>
               {link}
             </Link>
           </li>
         ))}
-         <li 
+        <li
           className="nav-links px-4 cursor-pointer capitalize font-weight:500  text-black-500 hover:scale-105 hover:text-sky-900 duration-200 link-underline"
-          ><a 
-          href={"https://drive.google.com/file/d/1VDY-OuEy3IWyJvm8usVDKn0lV0wTcYX5/view?usp=sharing" }
-          target="_blank"
-          // download={true}
+        >
+          <a
+            href={"https://drive.google.com/file/d/1VDY-OuEy3IWyJvm8usVDKn0lV0wTcYX5/view?usp=sharing"}
+            target="_blank" rel="noreferrer"
           >
-            Resume</a></li>
+            Resume
+          </a>
+        </li>
       </ul>
 
       <div
@@ -74,13 +98,13 @@ const NavBar = () => {
       {nav && (
         <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500">
           {links.map(({ id, link }) => (
-            <li
-              key={id}
-              className="px-4 cursor-pointer capitalize py-6 text-4xl"
-            >
+            <li key={id} className="px-4 cursor-pointer capitalize py-6 text-4xl">
               <Link
-              offset={-100}
-                onClick={() => setNav(!nav)}
+                offset={-100}
+                onClick={() => {
+                  setNav(!nav);
+                  scroll.scrollTo(link);
+                }}
                 to={link}
                 smooth
                 duration={500}
