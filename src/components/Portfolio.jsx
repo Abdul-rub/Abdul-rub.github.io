@@ -1,6 +1,6 @@
 import React from "react";
 import Men from "../assets/portfolio/Men.png"
-import CRUDop from "../assets/portfolio/CRUDop.png"
+import razorpay from "../assets/portfolio/razorpay.png"
 import ketto from "../assets/portfolio/ketto.png"
 import indeed from "../assets/portfolio/indeed.png"
 import BlogApp from "../assets/portfolio/BlogApp.png"
@@ -28,6 +28,15 @@ const Portfolio = () => {
     },
     {
       id: 3,
+      src: razorpay,
+      title: "Payment Integration",
+      techStack:"REACT| CHAKRA UI | NODEJS | MONGODB | EXPRESSJS | RAZORPAY",
+      desc: "Simple Payemnt Integration using RazorPay",
+      link: "https://wonderful-nasturtium-00ca4b.netlify.app/",
+      repo: "https://github.com/Abdul-rub/RazorPay_Payment_Integration",
+    },
+    {
+      id: 4,
       src: indeed,
       title: "Indeed Clone",
       techStack:"REACT| REDUX| FIREBASE| CHAKRA UI",
@@ -36,7 +45,7 @@ const Portfolio = () => {
       repo: "https://github.com/RavinderTakda/nifty-deer-6877",
     },
     {
-      id: 4,
+      id: 5,
       src: Men,
       title: "Mytheresa Clone",
       techStack:"HTML|CSS |JS",
@@ -45,22 +54,13 @@ const Portfolio = () => {
       repo: "https://github.com/br-lovanshi/mytheresa.com",
     },
     {
-      id: 5,
+      id: 6,
       src: ketto,
       title: "Ketto Clone",
       techStack:"HTML|CSS |JS" ,
       desc: "Ketto is an Online Crowdfunding Platform and Website in India for fundraising of Social, Charity, Movies, Music, Personal and Creative causes.",
       link: "https://effulgent-horse-6e1937.netlify.app/",
       repo: "https://github.com/NarendraKumarSwami/grateful-zebra-4531",
-    },
-    {
-      id: 6,
-      src: CRUDop,
-      title: "CRUD with React",
-      techStack:"HTML|CSS |REACT",
-      desc: "It's an Simple CRUD project, we can simply Add,Edit,Read and Delete user data",
-      link: "https://myform1.netlify.app/",
-      repo: "https://github.com/Abdul-rub/CRUD-Operation-",
     },
   ];
 
