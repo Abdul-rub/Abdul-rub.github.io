@@ -5,6 +5,7 @@ import ketto from "../assets/portfolio/ketto.png"
 import indeed from "../assets/portfolio/indeed.png"
 import BlogApp from "../assets/portfolio/BlogApp.png"
 import H4HOLIDAY from "../assets/H4HOLIDAY.png"
+import speechtotext from "../assets/speechtotext.png"
 
 const Portfolio = () => {
   const projects = [
@@ -35,8 +36,19 @@ const Portfolio = () => {
       link: "https://wonderful-nasturtium-00ca4b.netlify.app/",
       repo: "https://github.com/Abdul-rub/RazorPay_Payment_Integration",
     },
+
     {
       id: 4,
+      src: speechtotext,
+      title: "Speech To Text Converter",
+      techStack:"REACT",
+      desc: "Simple speech to text converter with 100+ language support, Just start speaking It'll convert it into text format",
+      link: "https://cool-cat-6f39ef.netlify.app/",
+      repo: "https://github.com/Abdul-rub/Voice-To-Text",
+    },
+
+    {
+      id: 5,
       src: indeed,
       title: "Indeed Clone",
       techStack:"REACT| REDUX| FIREBASE| CHAKRA UI",
@@ -44,24 +56,16 @@ const Portfolio = () => {
       link: "https://indeed-clone68.netlify.app/",
       repo: "https://github.com/RavinderTakda/nifty-deer-6877",
     },
-    {
-      id: 5,
-      src: Men,
-      title: "Mytheresa Clone",
-      techStack:"HTML|CSS |JS",
-      desc: "Mytheresa is an online shopping destination for children's, men's, and women's luxury fashion and lifestyle design",
-      link: "https://illustrious-pasca-32510e.netlify.app/",
-      repo: "https://github.com/br-lovanshi/mytheresa.com",
-    },
-    {
-      id: 6,
-      src: ketto,
-      title: "Ketto Clone",
-      techStack:"HTML|CSS |JS" ,
-      desc: "Ketto is an Online Crowdfunding Platform and Website in India for fundraising of Social, Charity, Movies, Music, Personal and Creative causes.",
-      link: "https://effulgent-horse-6e1937.netlify.app/",
-      repo: "https://github.com/NarendraKumarSwami/grateful-zebra-4531",
-    },
+    // {
+    //   id: 6,
+    //   src: Men,
+    //   title: "Mytheresa Clone",
+    //   techStack:"HTML|CSS |JS",
+    //   desc: "Mytheresa is an online shopping destination for children's, men's, and women's luxury fashion and lifestyle design",
+    //   link: "https://illustrious-pasca-32510e.netlify.app/",
+    //   repo: "https://github.com/br-lovanshi/mytheresa.com",
+    // },
+
   ];
 
   return (
