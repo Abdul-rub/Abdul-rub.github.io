@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5fce5381.css",
-    "main.js": "/static/js/main.844e8b88.js",
+    "main.css": "/static/css/main.c8bc4edc.css",
+    "main.js": "/static/js/main.c4c81d11.js",
     "static/media/BlogApp.png": "/static/media/BlogApp.180d65b7504d824c0bd4.png",
     "static/media/H4HOLIDAY.png": "/static/media/H4HOLIDAY.edc467fae6446ecf41f9.png",
     "static/media/ketto.png": "/static/media/ketto.551ffa4fb587be44ec7b.png",
@@ -10,6 +10,7 @@
     "static/media/razorpay.png": "/static/media/razorpay.5d269254e14b73c7eed8.png",
     "static/media/abdulimage.jpg": "/static/media/abdulimage.d5d6be3bb4100c1e7164.jpg",
     "static/media/indeed.png": "/static/media/indeed.4fa3b3106f0cd258723d.png",
+    "static/media/speechtotext.png": "/static/media/speechtotext.7b042bd5c6749a6d315f.png",
     "static/media/react.png": "/static/media/react.0cf951a69d8e58f83f9d.png",
     "static/media/node.png": "/static/media/node.952a9ea986dcfa5229ad.png",
     "static/media/github.png": "/static/media/github.3b9e32903aa89111875d.png",
@@ -19,11 +20,11 @@
     "static/media/express.png": "/static/media/express.1182731d0fa4994589eb.png",
     "static/media/javascript.png": "/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/index.html",
-    "main.5fce5381.css.map": "/static/css/main.5fce5381.css.map",
-    "main.844e8b88.js.map": "/static/js/main.844e8b88.js.map"
+    "main.c8bc4edc.css.map": "/static/css/main.c8bc4edc.css.map",
+    "main.c4c81d11.js.map": "/static/js/main.c4c81d11.js.map"
   },
   "entrypoints": [
-    "static/css/main.5fce5381.css",
-    "static/js/main.844e8b88.js"
+    "static/css/main.c8bc4edc.css",
+    "static/js/main.c4c81d11.js"
   ]
 }
