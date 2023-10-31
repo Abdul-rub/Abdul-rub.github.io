@@ -5,12 +5,24 @@ import ketto from "../assets/portfolio/ketto.png"
 import indeed from "../assets/portfolio/indeed.png"
 import BlogApp from "../assets/portfolio/BlogApp.png"
 import H4HOLIDAY from "../assets/H4HOLIDAY.png"
+import boAt from "../assets/boAt.png"
 import speechtotext from "../assets/speechtotext.png"
 
 const Portfolio = () => {
   const projects = [
+
     {
       id: 1,
+      src: boAt,
+      title: "Boat Clone",
+      techStack:"REACT| CHAKRA UI ",
+      desc: "It's a clone of boAt speaker, audio accessories website where users can buy products",
+      link: "https://glowing-dusk-64e33d.netlify.app/",
+      repo: "https://github.com/Abdul-rub/BoAt-Clone",
+    },
+
+    {
+      id: 2,
       src: H4HOLIDAY,
       title: "Hotel-Booking App",
       techStack:"REACT| NODEJS | MONGODB | EXPRESSJS | BOOTSTRAP",
@@ -19,7 +31,7 @@ const Portfolio = () => {
       repo: "https://github.com/Abdul-rub/H4Holiday",
     },
     {
-      id: 2,
+      id: 3,
       src: BlogApp,
       title: "Multi-User-BlogApp",
       techStack:"REACT| REDUX| NODEJS | MONGODB | EXPRESSJS | CHAKRA UI",
@@ -28,7 +40,7 @@ const Portfolio = () => {
       repo: "https://github.com/Abdul-rub/Multi-User-Blog-App",
     },
     {
-      id: 3,
+      id: 4,
       src: razorpay,
       title: "Payment Integration",
       techStack:"REACT| CHAKRA UI | NODEJS | MONGODB | EXPRESSJS | RAZORPAY",
@@ -38,7 +50,7 @@ const Portfolio = () => {
     },
 
     {
-      id: 4,
+      id: 5,
       src: speechtotext,
       title: "Speech To Text Converter",
       techStack:"REACT",
@@ -48,7 +60,7 @@ const Portfolio = () => {
     },
 
     {
-      id: 5,
+      id: 6,
       src: indeed,
       title: "Indeed Clone",
       techStack:"REACT| REDUX| FIREBASE| CHAKRA UI",
@@ -86,7 +98,7 @@ const Portfolio = () => {
               <img
                 src={src}
                 alt="projects"
-                className="rounded-md duration-200 hover:scale-105 h-60 w-full"
+                className="rounded-md duration-200 hover:scale-105 h-60 w-full  object-cover"
               />
               <div className="text-2xl text-slate-300 text-center">{title}</div>
               <div className="mt-2 p-4 text-slate-300 text-lg">{desc}</div>
