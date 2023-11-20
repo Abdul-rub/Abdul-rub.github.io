@@ -1,18 +1,29 @@
 import React from "react";
-import Men from "../assets/portfolio/Men.png"
+// import Men from "../assets/portfolio/Men.png"
 import razorpay from "../assets/portfolio/razorpay.png"
-import ketto from "../assets/portfolio/ketto.png"
-import indeed from "../assets/portfolio/indeed.png"
+// import ketto from "../assets/portfolio/ketto.png"
+// import indeed from "../assets/portfolio/indeed.png"
 import BlogApp from "../assets/portfolio/BlogApp.png"
 import H4HOLIDAY from "../assets/H4HOLIDAY.png"
 import boAt from "../assets/boAt.png"
 import speechtotext from "../assets/speechtotext.png"
+import groupchat from "../assets/groupchat.png"
 
 const Portfolio = () => {
   const projects = [
 
     {
       id: 1,
+      src: groupchat,
+      title: "ChatApp with Socket.io",
+      techStack:"REACT| SOCKET.IO| NODEJS| CHAKRA UI",
+      desc: "Advanced ChatApp with feature like One on One Chat, Group Chat, Update group and search users",
+      link: "https://655b7c0634e0762bbb2c6a8b--stirring-bubblegum-adf486.netlify.app/",
+      repo: "https://github.com/Abdul-rub/Chat-App",
+    },
+
+    {
+      id: 2,
       src: boAt,
       title: "Boat Clone",
       techStack:"REACT| CHAKRA UI ",
@@ -22,7 +33,7 @@ const Portfolio = () => {
     },
 
     {
-      id: 2,
+      id: 3,
       src: H4HOLIDAY,
       title: "Hotel-Booking App",
       techStack:"REACT| NODEJS | MONGODB | EXPRESSJS | BOOTSTRAP",
@@ -31,7 +42,7 @@ const Portfolio = () => {
       repo: "https://github.com/Abdul-rub/H4Holiday",
     },
     {
-      id: 3,
+      id: 4,
       src: BlogApp,
       title: "Multi-User-BlogApp",
       techStack:"REACT| REDUX| NODEJS | MONGODB | EXPRESSJS | CHAKRA UI",
@@ -40,7 +51,7 @@ const Portfolio = () => {
       repo: "https://github.com/Abdul-rub/Multi-User-Blog-App",
     },
     {
-      id: 4,
+      id: 5,
       src: razorpay,
       title: "Payment Integration",
       techStack:"REACT| CHAKRA UI | NODEJS | MONGODB | EXPRESSJS | RAZORPAY",
@@ -50,7 +61,7 @@ const Portfolio = () => {
     },
 
     {
-      id: 5,
+      id: 6,
       src: speechtotext,
       title: "Speech To Text Converter",
       techStack:"REACT",
@@ -59,17 +70,9 @@ const Portfolio = () => {
       repo: "https://github.com/Abdul-rub/Voice-To-Text",
     },
 
-    {
-      id: 6,
-      src: indeed,
-      title: "Indeed Clone",
-      techStack:"REACT| REDUX| FIREBASE| CHAKRA UI",
-      desc: "Indeed is an worldwide employment website for job listings. With Indeed, you can search millions of jobs online to find the next step in your career. With tools for job search, resumes, company reviews and more",
-      link: "https://indeed-clone68.netlify.app/",
-      repo: "https://github.com/RavinderTakda/nifty-deer-6877",
-    },
+
     // {
-    //   id: 6,
+    //   id: 7,
     //   src: Men,
     //   title: "Mytheresa Clone",
     //   techStack:"HTML|CSS |JS",
