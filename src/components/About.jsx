@@ -14,13 +14,7 @@ const About = () => {
         </div>
 
         <p className="text-xl mt-5">
-          Highly skilled in coding with a strong focus on implementing
-          and launching innovative projects. Demonstrated ability to
-          transform business requirements into effective technical
-          solutions. Seeking an entry-level software engineering position
-          with a renowned technology-driven firm. Committed to
-          contributing to the organization's success through my technical
-          expertise and passion for cutting-edge technology.</p>
+          Highly skilled in cloud computing, DevOps practices, and infrastructure automation with a strong focus on deploying scalable and reliable systems. Experienced in transforming business requirements into robust technical solutions, managing CI/CD pipelines, and optimizing cloud environments. Seeking a DevOps/Cloud Engineer role with a forward-thinking, technology-driven organization. Committed to driving efficiency, reliability, and innovation through my technical expertise and passion for modern cloud technologies.</p>
         <br />
       </div>
     </div>

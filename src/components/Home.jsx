@@ -21,11 +21,10 @@ const Home = () => {
         </div>
         <div className="flex flex-col justify-center h-full">
           <h2 className="text-4xl sm:text-7xl font-bold text-white">
-            I'm  <span className="text-black" >Abdul Rub</span> <p className="">Full Stack Web Developer</p>
+            I'm  <span className="text-black" >Abdul Rub</span> <p className="">Devops/Cloud Engineer</p>
           </h2>
           <p className="text-black	 font-bold text-xl  py-4 max-w-md">
-            I love to build websites and desgining software.
-            I love to work on web application using MERN stack
+           I specialize in designing, deploying, and managing scalable cloud infrastructures and CI/CD pipelines. I enjoy automating processes, optimizing workflows, and ensuring high availability and performance of applications. I also have experience working with web applications and the MERN stack, which helps me bridge development and operations effectively.
           </p>
           
             <div className="portfolio-btn"  >
